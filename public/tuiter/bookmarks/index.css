@@ -82,6 +82,7 @@ body {
 
 .wd-content .wd-inner-content>p {
     color: white;
+    opacity: 0.85;
     font-size: 15px;
     padding-right: 16px;
     max-width: 506px;
@@ -114,6 +115,7 @@ body {
 
 .wd-content .wd-inner-content .wd-image-box .wd-image-box-title {
     color: white;
+    opacity: 0.85;
     margin: 0px;
     padding: 12px;
     padding-top: 12px;
