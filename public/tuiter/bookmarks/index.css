@@ -99,6 +99,7 @@ body {
 }
 
 .wd-content .wd-inner-content .wd-image-box img {
+    max-width: 504px;
     max-height: 264px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
