@@ -1,0 +1,64 @@
+.custom-pos-navbar {
+    position: relative;
+    right: 15px;
+}
+
+@media (max-width: 576px) {
+    .custom-pos-navbar {
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .custom-follow-btn {
+        position: relative;
+        right: 6px;
+    }
+}
+
+.bg-primary {
+    background-color: rgb(40, 172, 244) !important;
+}
+
+.text-primary {
+    color: rgb(40, 172, 244) !important;
+}
+
+.bg-gray {
+    background-color: #d0d1d250;
+}
+
+.text-black {
+    color: black;
+}
+
+.nav.bs-override {
+    border: 0px !important;
+}
+
+.nav.bs-override .nav-link {
+    border: 0px !important;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nav.bs-override .nav-link.active {
+    border-bottom: 3px solid rgb(40, 172, 244) !important;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 1);
+}
+
+small {
+    position: relative;
+    left: 70px;
+}
+
+.rounded-pill-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.rounded-pill-bottom {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
