@@ -1,0 +1,11 @@
+.custom-pos-navbar {
+    position: relative;
+    right: 15px;
+}
+
+@media (max-width: 576px) {
+    .custom-pos-navbar {
+        position: relative;
+        left: 5px;
+    }
+}
