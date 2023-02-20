@@ -12,13 +12,16 @@ const PostItem = (post) => {
                 <p>${post.tweetText}</p>
 
                 <div class="wd-image-box">
-                    <img src="${post.image}" width="100%" height="100%">
-                    
-                    <div>
-                        <p class="wd-image-box-title">${post.title}</p>
-                        <p class="wd-image-box-content">${post.text}</p>
-                        <p class="wd-image-box-content"><i class="fas fa-link"></i> ${post.website}</p>
-                    </div>
+                    <img src="${post.image}" width="100%" height="100%" 
+                    style="${(!post.title)?"border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;":""}">
+
+                    ${(post.title && post.text && post.website)?`
+                        <div>
+                            <p class="wd-image-box-title">${post.title}</p>
+                            <p class="wd-image-box-content">${post.text}</p>
+                            <p class="wd-image-box-content"><i class="fas fa-link"></i> ${post.website}</p>
+                        </div>
+                    `:""}
                 </div>
                 <div class="wd-icons">
                     <a href="#"><i class="far fa-comment"></i><span>${post.comments}</span></a>
