@@ -6,7 +6,7 @@ const PostItem = (post) => {
             </div>
             <div class="wd-inner-content">
                 <div class="wd-name">
-                    <p>${post.userName} <span>@${post.handle} . ${post.time}</span></p>
+                    <p>${post.userName} <i class="fas fa-check-circle"></i> <span>@${post.handle} . ${post.time}</span></p>
                     <p>...</p>
                 </div>
                 <p>${post.tweetText}</p>
