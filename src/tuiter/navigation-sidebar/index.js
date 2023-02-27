@@ -1,10 +1,11 @@
 import React from 'react'
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2];
     return (
         <div className="container col-2 col-md-2 col-lg-1 col-xl-2 custom-pos-navbar">
             <div className="row">
@@ -12,23 +13,23 @@ const NavigationSidebar = (
                     <i className="fab fa-twitter"></i>
                 </div>
 
-                <a href="../HomeScreen/index.html"
+                <Link to="/tuiter/home"
                     className={`
                         col-12 bg-gray pt-2 pb-2 text-decoration-none text-white ${(active === 'home') ? 'active' : ''}
                     `}>
                     <div>
                         <i className="fas fa-home"></i> <span className="d-none d-xl-inline">Home</span>
                     </div>
-                </a>
+                </Link>
 
-                <a href="../ExploreScreen/index.html"
+                <Link to="/tuiter/explore"
                     className={`
                         col-12 bg-gray pt-2 pb-2 text-decoration-none text-white ${(active === 'explore') ? 'active' : ''}
                     `}>
                     <div>
                         <i className="fas fa-hashtag"></i> <span className="d-none d-xl-inline">Explore</span>
                     </div>
-                </a>
+                </Link>
 
                 <a href="../ExploreScreen/index.html" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
