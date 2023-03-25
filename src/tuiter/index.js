@@ -10,6 +10,7 @@ function Tuiter() {
       <div className="row justify-content-center">
         <NavigationSidebar />
         <Routes>
+          <Route index element={<HomeComponent />} />
           <Route path="/home" element={<HomeComponent />} />
           <Route path="/explore" element={<ExploreComponent />} />
         </Routes>
