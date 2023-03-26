@@ -15,7 +15,7 @@ const NavigationSidebar = () => {
 
                 <Link to="/tuiter/home"
                     className={`
-                        col-12 bg-gray pt-2 pb-2 text-decoration-none text-white ${(active === 'home') ? 'active' : ''}
+                        col-12 bg-gray pt-2 pb-2 text-decoration-none text-white ${(active === 'home' || !active) ? 'active' : ''}
                     `}>
                     <div>
                         <i className="fas fa-home"></i> <span className="d-none d-xl-inline">Home</span>
@@ -55,11 +55,11 @@ const NavigationSidebar = () => {
                     </div>
                 </a>
 
-                <a href="../ExploreScreen/index.html" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <Link to="/tuiter/profile" className={`col-12 bg-gray pt-2 pb-2 text-decoration-none text-white ${(active === 'profile') ? 'active' : ''}`}>
                     <div>
                         <i className="fas fa-user"></i> <span className="d-none d-xl-inline">Profile</span>
                     </div>
-                </a>
+                </Link>
 
                 <a href="../ExploreScreen/index.html" className="col-12 bg-gray rounded-bottom pt-2 pb-2 text-decoration-none text-white">
                     <div>
