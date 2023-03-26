@@ -10,7 +10,7 @@ const NavigationSidebar = () => {
         <div className="container col-2 col-md-2 col-lg-1 col-xl-2 custom-pos-navbar">
             <div className="row">
                 <div className="col-12 bg-gray rounded-top pt-2 pb-2 text-white">
-                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-twitter"></i> <span className="d-none d-xl-inline">Tuiter</span>
                 </div>
 
                 <Link to="/tuiter/home"
@@ -31,29 +31,35 @@ const NavigationSidebar = () => {
                     </div>
                 </Link>
 
-                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <Link to="/" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                    <div>
+                        <i class="far fa-asterisk"></i> <span className="d-none d-xl-inline">Labs</span>
+                    </div>
+                </Link>
+
+                <Link to="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-bell"></i> <span className="d-none d-xl-inline">Notifications</span>
                     </div>
-                </a>
+                </Link>
 
-                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <Link to="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-envelope"></i> <span className="d-none d-xl-inline">Messages</span>
                     </div>
-                </a>
+                </Link>
 
-                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <Link to="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-bookmark"></i> <span className="d-none d-xl-inline">Bookmarks</span>
                     </div>
-                </a>
+                </Link>
 
-                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <Link to="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-list-ul"></i> <span className="d-none d-xl-inline">Lists</span>
                     </div>
-                </a>
+                </Link>
 
                 <Link to="/tuiter/profile" className={`col-12 bg-gray pt-2 pb-2 text-decoration-none text-white ${(active === 'profile') ? 'active' : ''}`}>
                     <div>
@@ -61,15 +67,15 @@ const NavigationSidebar = () => {
                     </div>
                 </Link>
 
-                <a href="#" className="col-12 bg-gray rounded-bottom pt-2 pb-2 text-decoration-none text-white">
+                <Link to="#" className="col-12 bg-gray rounded-bottom pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-ellipsis-h"></i> <span className="d-none d-xl-inline">More</span>
                     </div>
-                </a>
+                </Link>
 
-                <div className="col-12 pt-2 pb-2 mt-2 bg-tuiter rounded-pill text-white text-center">
+                {/* <div className="col-12 pt-2 pb-2 mt-2 bg-tuiter rounded-pill text-white text-center">
                     <span>Tweet</span>
-                </div>
+                </div> */}
             </div>
         </div>
     )

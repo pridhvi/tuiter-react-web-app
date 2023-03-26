@@ -11,7 +11,7 @@ const ProfileComponent = () => {
         <>
             <div className="container wd-post-list col-10 col-md-10 col-lg-7 col-xl-6 text-white">
                 <div className='container row mb-2'>
-                    <i className="col-1 fas fa-arrow-left fa-2x d-flex align-items-center"></i>
+                    <Link to="/tuiter/home" className="col-1 fas fa-arrow-left fa-2x d-flex align-items-center text-decoration-none text-white"></Link>
                     <div className="col-11 d-inline">
                         <h5 className='mb-0'>{profile.firstName} {profile.lastName}</h5>
                         <small className='wd-text-gray'>6,114 Tweets</small>

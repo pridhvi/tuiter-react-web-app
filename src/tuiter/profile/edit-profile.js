@@ -71,19 +71,19 @@ const EditProfile = () => {
                     </Link>
                 </div>
 
-                <div className='wd-banner-edit'>
-                    <i className="fas fa-camera fa-2x text-black border border-5 border-white bg-white rounded-circle"></i>
-                    <i className="fas fa-times fa-2x text-black border border-5 border-white bg-white rounded-circle"></i>
+                <Link className='wd-banner-edit'>
+                    <i className="fas fa-camera fa-2x text-black border border-5 border-white bg-white rounded-circle opacity-50"></i>
+                    <i className="fas fa-times fa-2x text-black border border-5 border-white bg-white rounded-circle opacity-50"></i>
                     
                     <img className='opacity-50' height="200px" width="100%" src={profile.bannerPicture} alt="banner" />
-                </div>
+                </Link>
 
-                <div className='ms-3 wd-profile-edit'>
+                <Link className='ms-3 wd-profile-edit'>
                     <img className='rounded-circle position-absolute translate-middle-y border border-4 border-dark opacity-50'
                         height="130px" width="130px" src={profile.profilePicture} alt="dp" />
 
-                    <i className="fas fa-camera fa-2x text-black border border-5 border-white bg-white rounded-circle"></i>
-                </div>
+                    <i className="fas fa-camera fa-2x text-black border border-5 border-white bg-white rounded-circle opacity-50"></i>
+                </Link>
 
 
 
