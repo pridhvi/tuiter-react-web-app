@@ -31,25 +31,25 @@ const NavigationSidebar = () => {
                     </div>
                 </Link>
 
-                <a href="../ExploreScreen/index.html" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-bell"></i> <span className="d-none d-xl-inline">Notifications</span>
                     </div>
                 </a>
 
-                <a href="../ExploreScreen/index.html" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-envelope"></i> <span className="d-none d-xl-inline">Messages</span>
                     </div>
                 </a>
 
-                <a href="../ExploreScreen/index.html" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-bookmark"></i> <span className="d-none d-xl-inline">Bookmarks</span>
                     </div>
                 </a>
 
-                <a href="../ExploreScreen/index.html" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
+                <a href="#" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-list-ul"></i> <span className="d-none d-xl-inline">Lists</span>
                     </div>
@@ -61,7 +61,7 @@ const NavigationSidebar = () => {
                     </div>
                 </Link>
 
-                <a href="../ExploreScreen/index.html" className="col-12 bg-gray rounded-bottom pt-2 pb-2 text-decoration-none text-white">
+                <a href="#" className="col-12 bg-gray rounded-bottom pt-2 pb-2 text-decoration-none text-white">
                     <div>
                         <i className="fas fa-ellipsis-h"></i> <span className="d-none d-xl-inline">More</span>
                     </div>
