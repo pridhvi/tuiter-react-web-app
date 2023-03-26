@@ -61,7 +61,7 @@ const EditProfile = () => {
         <>
             <div className="container wd-post-list col-10 col-md-10 col-lg-7 col-xl-6 text-white">
 
-                <div className='container mt-2'>
+                <div className='container pt-3'>
                     <Link to="/tuiter/profile">
                         <i className="text-white bi bi-x-lg"></i>
                     </Link>
@@ -71,22 +71,21 @@ const EditProfile = () => {
                     </Link>
                 </div>
 
-                <Link className='container mb-5'>
-                    <div className=''>
-                        <i className="fas fa-camera fa-2x text-white"></i>
-                        <i className="fas fa-times fa-2x text-white"></i>
-                    </div>
-                    <img className='opacity-75' height="200px" width="100%" src={profile.bannerPicture} alt="banner" />
-                </Link>
+                <div className='wd-banner-edit'>
+                    <i className="fas fa-camera fa-2x text-black border border-5 border-white bg-white rounded-circle"></i>
+                    <i className="fas fa-times fa-2x text-black border border-5 border-white bg-white rounded-circle"></i>
+                    
+                    <img className='opacity-50' height="200px" width="100%" src={profile.bannerPicture} alt="banner" />
+                </div>
 
-                <Link className='container mb-5'>
-                    <img className='rounded-circle position-absolute translate-middle-y border border-4 border-dark opacity-75'
+                <div className='ms-3 wd-profile-edit'>
+                    <img className='rounded-circle position-absolute translate-middle-y border border-4 border-dark opacity-50'
                         height="130px" width="130px" src={profile.profilePicture} alt="dp" />
 
-                    <i className="fas fa-camera fa-2x text-white"></i>
-                </Link>
-                
-                
+                    <i className="fas fa-camera fa-2x text-black border border-5 border-white bg-white rounded-circle"></i>
+                </div>
+
+
 
                 <div className='container pt-5'>
                     <div className="form-floating mb-4">

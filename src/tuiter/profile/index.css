@@ -1,17 +1,17 @@
 .wd-banner-edit :nth-child(1) {
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    /* display: flex; */
-    /* align-items: center; */
+    position: relative;
+    top: 120px;
+    left: 250px;
 }
+
 .wd-banner-edit :nth-child(2) {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    /* display: flex; */
-    /* align-items: center; */
+    position: relative;
+    top: 120px;
+    left: 300px;
 }
-/* .wd-banner-edit-icons>i {
-    width: 10px;
-} */
+
+.wd-profile-edit i {
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+}
