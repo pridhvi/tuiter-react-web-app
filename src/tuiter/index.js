@@ -9,6 +9,7 @@ import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import ProfileComponent from "./profile";
 import profileReducer from "./reducers/profile-reducer";
+import EditProfile from "./profile/edit-profile";
 
 const store = configureStore({
   reducer: {
@@ -29,6 +30,7 @@ function Tuiter() {
             <Route path="/home" element={<HomeComponent />} />
             <Route path="/explore" element={<ExploreComponent />} />
             <Route path="/profile" element={<ProfileComponent />} />
+            <Route path="/edit-profile" element={<EditProfile />} />
           </Routes>
         </div>
       </div>

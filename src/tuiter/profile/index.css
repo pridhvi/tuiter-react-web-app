@@ -1,0 +1,17 @@
+.wd-banner-edit :nth-child(1) {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.wd-banner-edit :nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* display: flex; */
+    /* align-items: center; */
+}
+/* .wd-banner-edit-icons>i {
+    width: 10px;
+} */

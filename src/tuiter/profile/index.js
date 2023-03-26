@@ -19,11 +19,11 @@ const ProfileComponent = () => {
                 </div>
 
 
-                <img height="200px" width="100%" src="/images/banner.png" alt="banner" />
+                <img height="200px" width="100%" src={profile.bannerPicture} alt="banner" />
 
                 <div className='container mb-5'>
-                    <img className='rounded-circle position-absolute translate-middle-y' height="130px" width="130px" src="/images/owner.jpg" alt="dp" />
-                    <Link to="edit-profile.html">
+                    <img className='rounded-circle position-absolute translate-middle-y border border-4 border-dark' height="130px" width="130px" src={profile.profilePicture} alt="dp" />
+                    <Link to="/tuiter/edit-profile">
                         <span className="float-end mt-3 pt-1 pb-1 ps-3 pe-3 rounded-pill text-white border">Edit Profile</span>
                     </Link>
                 </div>
@@ -37,7 +37,7 @@ const ProfileComponent = () => {
                 <div className='container mb-2 wd-text-gray'>
                     <i className="far fa-map-marker-alt"></i>
                     <small className='me-4 ps-2'>{profile.location}</small>
-                    <i class="fas fa-birthday-cake"></i>
+                    <i className="fas fa-birthday-cake"></i>
                     <small className='me-4 ps-2'>Born {profile.dateOfBirth}</small>
                     <i className="far fa-calendar-alt"></i>
                     <small className='me-4 ps-2'>Joined {profile.dateJoined}</small>

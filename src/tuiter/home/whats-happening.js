@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './index.css'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { createTuit } from '../tuits/tuits-reducer'
 
 const WhatsHappening = () => {
 
     const [whatsHappening, setWhatsHappening] = useState("")
     const dispatch = useDispatch();
+    const profile = useSelector(state => state.profile)
 
     const tuitClickHandler = () => {
         const newTuit = {
@@ -17,8 +18,8 @@ const WhatsHappening = () => {
     }
     return (
         <div className="row wd-whats-happening pb-4">
-            <div className="col-auto wd-avatar">
-                <img src="/images/nasa-logo.jpg" width={48} alt="logo" />
+            <div className="col-auto">
+                <img className="rounded-circle" src={profile.profilePicture} height="52px" width="52px" alt="logo" />
             </div>
             <div className="col-10">
                 <textarea value={whatsHappening} placeholder="What's happening?"
