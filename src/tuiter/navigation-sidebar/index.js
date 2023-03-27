@@ -33,7 +33,7 @@ const NavigationSidebar = () => {
 
                 <Link to="/" className="col-12 bg-gray pt-2 pb-2 text-decoration-none text-white">
                     <div>
-                        <i class="far fa-asterisk"></i> <span className="d-none d-xl-inline">Labs</span>
+                        <i className="far fa-asterisk"></i> <span className="d-none d-xl-inline">Labs</span>
                     </div>
                 </Link>
 
