@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Tuiter
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Twitter clone using MERN stack technologies
 
 In the project directory, you can run:
 
