@@ -13,18 +13,22 @@ const TuitsList = () => {
         // eslint-disable-next-line
     }, [])
 
-    var toTimeString = secs => {
-        var days, hours, minutes, seconds, timeString;
+    var toTimeString = tuitTime => {
+        const tuitTimeDiff = new Date((new Date()).getTime() - tuitTime)
+        const tuitTimeDiffSecs = tuitTimeDiff / 1000
+        var days, hours, minutes, timeString;
 
-        if (secs == null)
+        if (tuitTimeDiff == null)
             return "";
 
-        days = (secs / 86400) >> 0;
-        hours = (secs % 86400 / 3600) >> 0;
-        minutes = (secs % 3600 / 60) >> 0;
-        seconds = (secs % 60);
+        days = (tuitTimeDiffSecs / 86400) >> 0;
+        hours = (tuitTimeDiffSecs % 86400 / 3600) >> 0;
+        minutes = (tuitTimeDiffSecs % 3600 / 60) >> 0;
+        // seconds = (secs % 60);
+        const dateStringArray = (new Date(tuitTime)).toString().split(' ')
 
-        timeString = days === 0 ? (hours === 0 ? (minutes === 0 ? (seconds + " seconds"): minutes + "m") : hours + "h") : days + "d";
+        timeString = days === 0 ? (hours === 0 ? (minutes === 0 ? "less than a minute ago": minutes + "m") : hours + "h") 
+                                : dateStringArray[1] + " " + dateStringArray[2] + ", " + dateStringArray[3];
         return timeString;
     };
 
@@ -36,7 +40,7 @@ const TuitsList = () => {
             }
 
             {tuits.map(tuit => {
-                const tuitTime = toTimeString((new Date((new Date()).getTime() - tuit.time))/1000);
+                const tuitTime = toTimeString(tuit.time);
                 
                 return <TuitItem key={tuit._id} tuit={tuit} tuitTime={tuitTime} />
             })}
