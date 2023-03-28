@@ -28,7 +28,7 @@ const WhatsHappening = () => {
                 </textarea>
                 <div>
                     <button className="rounded-pill btn btn-primary bg-tuiter float-end mt-2 ps-3 pe-3 fw-bold"
-                        onClick={tuitClickHandler}>
+                        onClick={tuitClickHandler} disabled={whatsHappening === ""? "true": ""}>
                         Tuit
                     </button>
                     <div className="text-tuiter fs-2">
