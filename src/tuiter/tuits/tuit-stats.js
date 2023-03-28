@@ -22,6 +22,22 @@ const TuitStats = ({ tuit }) => {
             }))
         }
     }
+    const handleClickDislike = () => {
+        if (tuit.disliked) {
+            return dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes - 1,
+                disliked: false
+            }))
+        }
+        else {
+            return dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes + 1,
+                disliked: true
+            }))
+        }
+    }
     
     return (
         <div className="wd-icons">
@@ -31,6 +47,11 @@ const TuitStats = ({ tuit }) => {
                 <i onClick={handleClickLike}
                     className={`${tuit.liked ? 'fas text-danger' : 'far'} fa-heart`}></i>
                 <span>{tuit.likes}</span>
+            </Link>
+            <Link to="#">
+                <i onClick={handleClickDislike}
+                    className={`${tuit.disliked ? 'fas text-white' : 'far'} fa-thumbs-down`}></i>
+                <span>{tuit.dislikes}</span>
             </Link>
             <Link to="#"><i className="far fa-share-alt"></i></Link>
         </div>
