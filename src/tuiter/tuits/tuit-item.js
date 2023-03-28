@@ -5,13 +5,12 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { deleteTuitThunk } from '../../services/tuits-thunks'
 
-const TuitItem = ({ tuit }) => {
+const TuitItem = ({ tuit, tuitTime }) => {
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuitThunk(id));
     }
-
 
     return (
         <div className="wd-content">
@@ -20,7 +19,7 @@ const TuitItem = ({ tuit }) => {
             </div>
             <div className="wd-inner-content mb-3">
                 <div className="wd-name">
-                    <p>{tuit.userName} <i className="fas fa-check-circle text-primary"></i> <span>{tuit.handle} . {tuit.time}</span></p>
+                    <p>{tuit.userName} <i className="fas fa-check-circle text-primary"></i> <span>{tuit.handle} . {tuitTime}</span></p>
                     <Link>
                         <i className="text-white bi bi-x-lg float-end"
                             onClick={() => deleteTuitHandler(tuit._id)}></i>

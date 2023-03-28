@@ -1,4 +1,5 @@
 import axios from 'axios';
+// eslint-disable-next-line
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
 // const TUITS_API = 'https://tuiter-node-server-app-rly5.onrender.com/api/tuits';
@@ -22,7 +23,7 @@ export const deleteTuit = async (tid) => {
 }
 
 export const updateTuit = async (tuit) => {
-    const response = await axios
-        .put(`${TUITS_API}/${tuit._id}`, tuit);
+    // eslint-disable-next-line
+    const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
     return tuit;
 }
