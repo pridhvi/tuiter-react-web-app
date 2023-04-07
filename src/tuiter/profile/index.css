@@ -1,0 +1,17 @@
+.wd-banner-edit :nth-child(1) {
+    position: relative;
+    top: 120px;
+    left: 250px;
+}
+
+.wd-banner-edit :nth-child(2) {
+    position: relative;
+    top: 120px;
+    left: 300px;
+}
+
+.wd-profile-edit i {
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+}
