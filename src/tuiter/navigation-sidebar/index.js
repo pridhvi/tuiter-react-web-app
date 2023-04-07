@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import './index.css'
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
@@ -9,9 +10,11 @@ const NavigationSidebar = () => {
     return (
         <div className="container col-2 col-md-2 col-lg-1 col-xl-2 custom-pos-navbar">
             <div className="row">
-                <div className="col-12 bg-gray rounded-top pt-2 pb-2 text-white">
+                {/* <Link to="/tuiter/"> */}
+                <Link to="/tuiter/" className="col-12 bg-gray rounded-top pt-2 pb-2 text-white text-decoration-none">
                     <i className="fab fa-twitter"></i> <span className="d-none d-xl-inline">Tuiter</span>
-                </div>
+                </Link>
+                {/* </Link> */}
 
                 <Link to="/tuiter/home"
                     className={`

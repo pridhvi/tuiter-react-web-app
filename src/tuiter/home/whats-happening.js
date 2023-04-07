@@ -19,7 +19,9 @@ const WhatsHappening = () => {
     return (
         <div className="row wd-whats-happening pb-4">
             <div className="col-auto">
+                <Link to="/tuiter/profile">
                 <img className="rounded-circle" src={profile.profilePicture} height="52px" width="52px" alt="logo" />
+                </Link>
             </div>
             <div className="col-10">
                 <textarea value={whatsHappening} placeholder="What's happening?"
