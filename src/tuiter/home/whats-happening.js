@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './index.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { createTuitThunk } from '../../services/tuits-thunks'
+import { Link } from "react-router-dom"
 
 const WhatsHappening = () => {
 
